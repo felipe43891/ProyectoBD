@@ -1,0 +1,70 @@
+/* Estilos para el video de fondo */
+#video-background {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+}
+
+/* Estilos para el menú desplegable */
+.dropdown {
+    position: absolute;
+    top: 50px; /* Ajusta la posición superior según tu diseño */
+    right: 0;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    padding: 10px;
+    display: none;
+}
+
+.menu:hover .dropdown, .menu:hover .menu .dropdown {
+    display: block;
+}
+
+/* Estilos para los elementos del menú desplegable */
+.dropdown a {
+    display: block;
+    text-decoration: none;
+    color: #333;
+    padding: 5px;
+}
+
+.dropdown a:hover {
+    background-color: #ddd;
+}
+
+/* Estilos para el menú */
+.menu {
+    position: relative;
+}
+
+/* Estilos para los temas (rectángulos verticales) */
+.theme {
+    display: inline-block;
+    margin: 10px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 200px;
+    text-align: center;
+    position: relative;
+}
+
+.theme img {
+    max-width: 180%;
+    max-height: 80vh;
+    display: block;
+}
+
+/* Estilos para el contenido de los temas */
+.theme-content {
+    display: none;
+    padding: 10px;
+}
+
+.show {
+    display: block;
+}

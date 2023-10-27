@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Menu Principal</title>
+    <link href="Formulario.css" rel="stylesheet" type="text/css" />
+    <link href="styleIndex.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <!-- Video de fondo -->
+    <video autoplay muted loop id="video-background">
+        <source src="video.mp4" type="video/mp4">
+        <!-- Agrega más etiquetas source para otros formatos de video -->
+        Tu navegador no soporta el elemento de video.
+    </video>
+
+    <header>
+        <div class="menu">
+            <a href="index.html" class="menu-link">Inicio</a>
+            <a href="registro.jsp" class "menu-link">Registro</a>
+            <a href="iniciarsesion.jsp" class="menu-link">Inicio de Sesión</a>
+            <a href="principal.jsp" class="menu-link">Ver Registros</a>
+            <div class="dropdown">
+                <a href="#">Iniciar Sesión</a>
+                <a href="#">Registrar</a>
+                <a href="#">Ver Registros</a>
+            </div>
+        </div>
+    </header>
+    <section>
+        <!-- Tema 1 -->
+        <div class="theme" onclick="toggleContent(1)">
+            <img src="img1.jpg" alt="Tema 1">
+        </div>
+        <div class="theme-content" id="content1">
+            Contenido de Tema 1
+        </div>
+
+        <!-- Tema 2 -->
+        <div class="theme" onclick="toggleContent(2)">
+            <img src="img2.jpg" alt="Tema 2">
+        </div>
+        <div class="theme-content" id="content2">
+            Contenido de Tema 2
+        </div>
+
+        <!-- Tema 3 -->
+        <div class="theme" onclick="toggleContent(3)">
+            <img src="img3.jpg" alt="Tema 3">
+        </div>
+        <div class="theme-content" id="content3">
+            Contenido de Tema 3
+        </div>
+
+        <!-- Tema 4 -->
+        <div class="theme" onclick="toggleContent(4)">
+            <img src="img4.png" alt="Tema 4">
+        </div>
+        <div class "theme-content" id="content4">
+            Contenido de Tema 4
+        </div>
+
+        <!-- Tema 5 -->
+        <div class="theme" onclick="toggleContent(5)">
+            <img src="img5.jpg" alt="Tema 5">
+        </div>
+        <div class="theme-content" id="content5">
+            Contenido de Tema 5
+        </div>
+
+        <!-- Tema 6 -->
+        <div class="theme" onclick "toggleContent(6)">
+            <img src="img6.jpeg" alt="Tema 6">
+        </div>
+        <div class="theme-content" id="content6">
+            Contenido de Tema 6
+        </div>
+    </section>
+
+    <script>
+        function toggleContent(themeNumber) {
+            var content = document.getElementById("content" + themeNumber);
+            if (content.style.display === "block") {
+                content.style.display = "none";
+            } else {
+                content.style.display = "block";
+            }
+        }
+    </script>
+</body>
+</html>
